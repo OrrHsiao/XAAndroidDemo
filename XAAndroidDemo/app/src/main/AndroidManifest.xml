@@ -13,12 +13,21 @@
         android:theme="@style/Theme.XAAndroidDemo"
         tools:targetApi="31">
         <activity
-            android:name=".FirstActivity"
-            android:label="FirstActivity"
-            android:exported="true">
+            android:name=".SecondActivity"
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="com.xiaoao.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.CUSTOM" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:exported="true"
+            android:label="FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
