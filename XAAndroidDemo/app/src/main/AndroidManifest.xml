@@ -13,7 +13,7 @@
         android:theme="@style/Theme.XAAndroidDemo"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
+            android:name=".activity.SecondActivity"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.xiaoao.ACTION_START" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstActivity"
+            android:name=".activity.FirstActivity"
             android:exported="true"
             android:label="FirstActivity">
             <intent-filter>

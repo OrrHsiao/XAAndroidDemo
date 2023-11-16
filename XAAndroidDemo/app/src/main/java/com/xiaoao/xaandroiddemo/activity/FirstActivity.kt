@@ -1,12 +1,12 @@
-package com.xiaoao.xaandroiddemo
+package com.xiaoao.xaandroiddemo.activity
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
 import android.widget.Toast
+import com.xiaoao.xaandroiddemo.R
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +15,7 @@ class FirstActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        supportActionBar?.hide()
         setContentView(R.layout.first_layout)
         //按钮
         val button1 = findViewById<Button>(R.id.first_activity_button1)
@@ -37,8 +38,12 @@ class FirstActivity : AppCompatActivity() {
         //显式Intent
         val intent = Intent(this, SecondActivity::class.java)
         val data = "这是上个页面传过来的数据"
+        //传参
         intent.putExtra("data", data)
+        //跳转
         startActivity(intent)
+        //带返回结果的跳转
+//        startActivityForResult(intent, 1)
         //隐式Intent
 //        val intent = Intent("com.xiaoao.ACTION_START")
 //        intent.addCategory("android.intent.category.CUSTOM")
