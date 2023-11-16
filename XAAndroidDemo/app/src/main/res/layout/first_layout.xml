@@ -5,6 +5,7 @@
     android:orientation="vertical">
 <!--    <include layout="@layout/nav"/>-->
     <com.xiaoao.xaandroiddemo.view.Nav
+        android:id="@+id/first_activity_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
