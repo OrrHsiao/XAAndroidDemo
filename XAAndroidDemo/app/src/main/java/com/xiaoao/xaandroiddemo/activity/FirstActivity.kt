@@ -25,6 +25,11 @@ class FirstActivity : AppCompatActivity() {
             Toast.makeText(this, "点击了button1", Toast.LENGTH_SHORT).show()
             pushToSecondActivity()
         }
+        val button2 = findViewById<Button>(R.id.first_activity_button2)
+        button2.setOnClickListener() {
+            val intent = Intent(this, ListViewActivity::class.java)
+            startActivity(intent)
+        }
 
         val nav = findViewById<Nav>(R.id.first_activity_nav)
         println(nav.nav_back_btn.text)
