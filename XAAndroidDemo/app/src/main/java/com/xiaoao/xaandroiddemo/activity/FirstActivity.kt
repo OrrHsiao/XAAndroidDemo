@@ -7,6 +7,7 @@ import android.view.Menu
 import android.widget.Button
 import android.widget.Toast
 import com.xiaoao.xaandroiddemo.R
+import com.xiaoao.xaandroiddemo.view.Nav
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
