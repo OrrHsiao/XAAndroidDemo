@@ -41,5 +41,9 @@ class InitOrderDemo(name: String) {
 
 fun main() {
     InitOrderDemo("haha")
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> origin/main

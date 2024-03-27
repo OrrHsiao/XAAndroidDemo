@@ -7,7 +7,6 @@ import android.view.Menu
 import android.widget.Button
 import android.widget.Toast
 import com.xiaoao.xaandroiddemo.R
-import com.xiaoao.xaandroiddemo.view.Nav
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +23,11 @@ class FirstActivity : AppCompatActivity() {
             //显示一个提示
             Toast.makeText(this, "点击了button1", Toast.LENGTH_SHORT).show()
             pushToSecondActivity()
+        }
+        val button2 = findViewById<Button>(R.id.first_activity_button2)
+        button2.setOnClickListener() {
+            val intent = Intent(this, ListViewActivity::class.java)
+            startActivity(intent)
         }
 
         val nav = findViewById<Nav>(R.id.first_activity_nav)
